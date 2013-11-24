@@ -28,9 +28,9 @@ $(document).ready(function() {
   function generateConversionHtml(unitsHash) {
     var data = $('<div>', {'class': 'row'});
     for(var unit in unitsHash) {
-      var unitHtml = $('<div>', {'class': 'col-xs-4'});
+      var unitHtml = $('<div>', {'class': 'col-lg-4'});
       unitHtml.append('<h2>' + parseFloat(unitsHash[unit].toFixed(6)) + '</h2>');
-      unitHtml.append('<p>' + unit + '<p>');
+      unitHtml.append('<p>' + unit + '</p>');
       data.append(unitHtml);
     }
     return data;
